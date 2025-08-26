@@ -1,0 +1,52 @@
+      h3{
+            color: red;
+            font-size:  30px;
+        }
+        .one{
+            color: blueviolet;
+            font-size: 25px;
+        }
+        p{
+            font-size: large;
+        }
+        #two{
+               color: darkblue;
+        }
+        .three{
+            color: white;
+            font-size: 20px;
+            background-color: black;
+            display: inline-block;
+            padding: 20px;
+        }
+        .four{
+            background-color: yellow;
+            color: black;
+            display: inline-block;
+            padding: 20px;
+            border-width: 2px;
+            border-color: black;
+            border-style: solid;
+            
+        }
+        .css{
+            color: red;
+            font-size: 15px;
+        }
+        .code{
+            border-style: solid;
+            border-width: 3px;
+            border-color: black;
+            text-align: center;
+            padding: 10px;
+            background-color: palevioletred;
+        }
+        .five{
+            border-style: solid;
+            border-color: black;
+            border-width: 4px;
+            text-align: right;
+            padding: 10px;
+            background-color: pink;
+             margin: 5% 5%  10% 10%; 
+        }
