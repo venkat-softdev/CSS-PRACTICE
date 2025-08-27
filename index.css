@@ -50,3 +50,29 @@
             background-color: pink;
              margin: 5% 5%  10% 10%; 
         }
+        .color{
+            border-style: solid;
+             border-color: black; 
+            border-radius: 0.25rem;
+            padding: 5px;
+            margin: 5px;
+            font-size: medium;
+                 
+        }
+        .lap{
+            background-color: rgb(32, 27, 27);
+        }
+        .VENKAT{
+            background-color: dodgerblue;
+            color: white;
+            border-radius: 19rem;
+            padding-left: 10px;
+            padding: 5px;
+        }
+        .vp{
+            background-color: orangered;
+            color: white;
+            font-size: x-large;
+            border-radius: 0.5rem;
+            padding-left: 2px;
+        }
