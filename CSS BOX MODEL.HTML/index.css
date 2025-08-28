@@ -79,3 +79,75 @@
             background-color: whitesmoke;
             padding: 20px;
         }
+        .try{
+            border-style: solid;
+            border-color: black;
+            border-width: 2px;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 10px;
+            background-color: grey;
+            color: white;
+            text-align: center;
+            
+        }
+        .no{
+            border-style: solid;
+            border-color: black;
+            border-width: 2px;margin: 10px;
+            padding: 10px;
+            border-radius: 20px;
+            text-align: center;
+            background-color: rgba(128, 128, 128, 0.507);
+            margin-left: 10px;
+            margin-left: 10px;
+        }
+        .yes{
+            border: 2px,solid,black;
+            margin: 20px;
+            border-radius: 20px;
+            background-color: white;
+        }
+        .circle{
+            border: 3px,solid,red;
+            border-radius: 50%;
+            width: 200px;
+            height: 150px;
+            display: flex;
+            justify-content: center; 
+             align-items: center; 
+            background-color: rgba(128, 128, 128, 0.523);
+            margin: auto;
+            margin-top: 20px;
+        }
+        .fox{
+            border: 2px,dotted,black;
+            padding: 10px;
+            border-radius: 20px;
+            background-color: rgba(128, 128, 128, 0.451);
+            
+        }
+        .cse{
+            border: 2px,solid,black;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 20px;
+            text-align: center;
+            background-color: rgba(0, 255, 255, 0.474);
+        }
+        .left{
+            border: 4px,solid,rgba(0, 0, 0, 0.547);
+            border-left-width: 10px;
+            padding: 10px;
+            border-radius: 20px;
+            margin: 20px;
+           
+        }
+        .right{
+            border: 4px,solid,black;
+            border-right-width: 10px;
+            padding-right:  10px;
+            border-radius: 20px;
+            margin: 20px;
+            text-align: right;
+        }
