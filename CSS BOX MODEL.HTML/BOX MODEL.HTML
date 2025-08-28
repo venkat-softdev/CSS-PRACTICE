@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> BOX MODEL</title>
+    <style>
+        .one{
+            border-style: solid;
+            border-color: black;
+            border-width: 2px;
+            font-size: 20px;
+            background-color: aqua;
+            width: 200px;
+            height: 120px;
+            padding: 20px;
+            margin: 10px;
+           padding-right: 4px;
+           
+            
+
+        }
+        .box{
+            border-style: solid;
+            border-color: black;
+            border-width: 5px;
+            width: 200px;
+            height: 120px;
+           padding-top: 10px;
+           padding-right: 10px;
+           padding-left: 10px;
+            margin-top: 20px; 
+            margin-right: 20px; 
+            margin-left: 20px; 
+            box-sizing: border-box; 
+            background-color: gray;
+            
+           
+        }
+        .fruit{
+            background-color: rgb(32, 198, 198);
+             border: 3px,solid,black;
+             height: 120px;
+             width: 200px;
+             padding: 20px;
+             margin-top: 10px;
+             margin-left: 10px;
+             box-sizing: border-box;
+             margin: auto;
+            
+             
+
+        }
+        .www{
+            background-color: rgb(180, 142, 215);
+            color: white;
+            border: 2px,solid,black;
+            height: 100px;
+            width: 180px;
+            padding: 20px;
+            margin: 10px;
+             box-sizing: border-box; 
+        }
+    </style>
+</head>
+<center>
+    <h1> BOX MODEL</h1>
+</center>
+<hr>
+<body>
+     <h2> introduction</h2>
+     <li> the css box model  is a rectangular layout paradigm used in css.</li>
+     <li> it consits of margins , border, padding,and the actual content,defining the structure and layout of elements on a web page.</li>
+      <div>
+        <h2> Componenets of the css box model:</h2>
+        <ul>
+            <li> content: the actual text images,or media within an element. </li>
+            <li> padding: the space between the content and the border, providing cushioning around the content.</li>
+            <li> Border: the line that encloses the content and padding ,defining the boundary of the element.</li>
+            <li> margin: the space outside the border,creating distance between adjacent elements.</li>
+        </ul>
+    </div>
+    <h2> 1.Box Model</h2>
+    <p> this isa div element with border,paddind ,width,height,and background color.</p>
+    <ul>
+        <li> the css box model consits of the following properties:</li>
+        <ul>
+            <li> content</li>
+            <li> padding</li>
+            <li> Border</li>
+            <li> Margin</li>
+        </ul>
+    </ul>
+
+     <p class="one"> this is a box element</p>  
+     <div class="box">
+         <p> HI MY SELF VENKAT</p>
+     </div>
+     <div class="fruit">
+        <p> ASPIRE BECOME A SOFTWARE DEVELOPER</p>
+     </div>
+     <div class="www">
+        <p> HEELO WORLD</p>
+     </div>
+</body>
+</html>

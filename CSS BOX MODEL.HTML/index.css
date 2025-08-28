@@ -1,0 +1,81 @@
+.padded-box{
+            border-width: 2px;
+            border-color: black;
+            border-style: solid;
+            height: 100px;
+            width: 200px;
+            padding: 20px;
+            padding-right: 10px;
+            box-sizing: border-box;
+        }
+        .hello{
+            border: 2px,dashed,black;
+            text-align: center;
+            padding: 20px;
+            margin-left: 10px;
+            margin-top: 20px;
+          
+           
+        }
+        .bye{
+            border: 2px,dashed,black;
+           background-color: rgb(95, 7, 107); 
+           color: white;
+           
+        }
+         .hi{
+            border: 2px,solid,black;
+            padding: 50px,200px;
+            margin-top: 20px;
+            text-align: center;
+            
+        } 
+        .apple{
+            border: 2px,solid,black;
+            box-sizing: border-box;
+            height: 100;
+            width: 200px;
+           margin:10px auto;
+          
+            
+            
+        }
+        .bike{
+            border: 2px,solid,black;
+             margin: 20px; 
+            padding-left: 10px;
+             background-color: black;
+        }
+        .evo{
+            border: 2px,solid,black;
+            padding: 20px;
+            margin: 30px;
+            background-color: grey;
+            color: white;
+        }
+        .j{
+            background-color :wheat;
+            padding: 50px;
+        }
+
+        .k{
+            padding: 20px;
+            background-color: white;
+        }
+        .paddedbox2{
+            background-color: grey;
+            padding: 50px;
+            margin: 20px;
+        }
+        .orange{
+            background-color: white;
+            padding: 10px;
+        }
+        .grape{
+            background-color: rgba(255, 255, 255, 0.103);
+            padding: 10px;
+        }
+        .mango{
+            background-color: whitesmoke;
+            padding: 20px;
+        }
