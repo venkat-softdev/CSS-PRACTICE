@@ -1,0 +1,93 @@
+.bgauto{
+            background-image: url(./car.webp);
+            background-size: auto;
+            width: 180px;
+            height: 120px;
+            background-repeat: no-repeat;
+            border: 1px solid black;
+            margin: 8px;
+            display: inline-block;
+        }
+        .bgcover{
+            background-image:url(./car.webp);
+            background-repeat: no-repeat;
+            border-style: solid;
+            border-color: black;
+            border-width: 1px;
+            width: 120px;
+            height: 180px;
+            background-size: cover;
+            display: inline-block;
+            margin: 10px;
+
+        }
+        .bgcontain{
+            background-image: url(./car.webp);
+            background-size: contain;
+            background-repeat: no-repeat;
+            border-style: solid;
+            border-color: black;
+            border-width: 1px;
+            width: 120px;
+            height: 180px;
+            display: inline-block;
+            margin: 10px;
+        }
+        .bgpx{
+            background-image: url(./car.webp);
+            background-size: 100px;
+            background-repeat: no-repeat;
+            width: 120px;
+            height: 180px;
+            border-width: 1px;
+            border-color: black;
+            display: inline-block;
+            border-style: solid;
+            
+        }
+        .bgmulti{
+            background-image: url(./car.webp),url(twinkle\ twinkle.jpg);
+            background-size: contain;
+            width: 120px;
+            height: 180px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: black;
+            display: inline-block;
+            background-repeat: no-repeat;
+        }
+        .car{
+            background-image: url(./car.webp);
+            background-size: contain;
+            /* width: 180px; */
+            /* height: 120px; */
+            /* border-style: solid; */
+            /* border-color: black; */
+            /* border-width: 1px'; */
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            min-height: 200vh;
+
+        }
+        .bike{
+            background-image: url(./car.webp);
+            border: 2px,solid,black;
+            width: 120px;
+            height: 180px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            /* background-position: center; */
+            /* background-position: bottom left; */
+            /* background-position: bottom right; */
+            /* background-position: top center; */
+            /* background-position: top left; */
+            /* background-position: top right; */
+             /* background-position: bottom center; */
+              /* background-position: center left ; */
+                /* background-position: center  right; */
+
+
+
+
+
+        }
