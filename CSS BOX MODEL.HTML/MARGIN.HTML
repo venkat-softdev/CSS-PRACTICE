@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Margin </title>
+
+    <style>
+        .example{
+            background-color: aliceblue;
+            height: 120px;
+           border-radius: 20px;
+            border: 2px,solid,black;
+            padding: 10px;
+            margin: 20px;
+            border-right-width: 5px;
+            border-top-width: 5px;
+        }
+        .ex{
+            border: 2px,solid,black;
+             padding-right: 10px;
+            margin: 10px;
+            border-radius: 30px;
+            background-color: wheat;
+            border-right-width: 5px;
+            border-top-width: 5px;
+            text-align: right;
+        }
+        .cat{
+            border: 2px,solid,black;
+            border-radius: 20px;
+            padding-left: 10px;
+            border-top-width: 5px;
+            border-right-width: 5px;
+            background-color: antiquewhite;
+        }
+        .f4{
+            border: 2px,solid,black;
+            width: 200px;
+            height: 120px;
+             
+             padding: 10px;
+             box-sizing: border-box;
+             margin:20px auto;
+             text-align: center;
+             background-color: rgba(0, 255, 255, 0.396);
+        }
+        .f1{
+             background-color: wheat;
+             height: 180px;
+             border-radius: 20px;
+             padding-left: 10px;
+              padding-top: 5px; 
+             
+        }
+        .f2{
+            background-color: whitesmoke;
+            border-radius: 20px;
+             padding-left: 10px; 
+             margin-right: 4px;
+
+             
+            
+        }
+    </style>
+</head>
+<center>
+    <h1> CSS MARGIN</h1>
+</center>
+<hr>
+<body>
+    <h2> 
+        introduction:
+    </h2>
+    <li> css margin are used to create space elements ,outside of any defined borders.</li>
+    <li> they play a vital role in controliing the layout and spacing between elements on a web page.</li>
+    <div>
+        <h2> Key css margin properties:</h2>
+        <ul>
+            <li> margin-top: sets the top margin of an element.</li>
+            <li> margin-right: sets the right margin of an elements .</li>
+            <li> margin-bottom: sets the bottom margin of an elements.</li>
+            <li> margin-left: sets the left margin of an elements.</li>
+            <li> margin: A shorthand to set all four margins at once </li>
+        </ul>
+    </div>
+    <h2> 1. Understanding Margin Property</h2>
+    <li> The margin property in css is used to controls the spacing outside an element .</li>
+
+    <div class="example">
+        <div class="ex">
+        <h2> Example 1</h2>
+        <p> This is an example with margins.</p>
+        </div>
+         </div>
+         <h2> 2. Applying margins </h2>
+         <p> the margin property canb be applied in several ways </p>
+         <ul>
+            <li> margin:value : Applies the same margin to all sides of the element.</li>
+            <li> margin: top right bottom left: Applies different margins to ecah side of the element in clockwiseorder.</li>
+            <li> margin-top: value: Applies a specific margin to the top of the element.</li>
+            <li> margin-bottom:value: Applies a specific margin to the bottom of the element.</li>
+            <li> margin-left:value: applies a specific margin to the left of the element.</li>
+            <li> margin-right:value; Applies a specific margin to the right of the element.</li>
+            <li> margin: vertcical horizontal: Applies diiferent to /bottom and left/right margins.</li>
+            <li> margin:auto; centers the element horizontally by setting left and right margin to auto.</li>
+         </ul>
+         <div class="cat">
+            <h2> Example 2</h2>
+            <p> This is an example with diffrent top/bottom and left/right margins.</p>
+         </div>
+         <div class="f4">
+            <h2> Example 3</h2>
+            <p> This is an example with center-aligned margin.</p>
+         </div>
+         <h2> Example 4:</h2>
+         <div class="f1">
+            <h2> Example 4!</h2>
+            <p> This is an example with margins applied to an inner div.</p>
+             <div class="f2">
+            <h2> Example 4!</h2>
+            <p>
+                This is an inner div with margin.
+            </p>
+         </div>
+         </div>
+        
+</body>
+</html>
