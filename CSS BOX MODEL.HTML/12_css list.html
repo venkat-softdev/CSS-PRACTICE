@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> css list</title>
+    <style>
+        ul{
+            list-style-type: disc;
+        }
+        ol{
+            list-style-type: decimal;
+        }
+        .aa{
+            list-style-type: square;
+        }
+        .bb{
+            list-style-type: lower-alpha;
+        }
+        .cc{
+            list-style-type: circle;
+        }
+        .dd{
+            list-style-type: upper-alpha;
+        }
+    </style>
+</head>
+<center>
+    <h1 style="font-family: algerian;"> CSS LISTS</h1>
+</center>
+<hr>
+<body>
+    <h2> Introduction:</h2>
+    <li> css lists are used to style ordered (ol),unordered(ul),and description(dt) in html.</li>
+    <li>  they allow for customization of list markers , layout, and appreance.</li>
+    <div class="amd">
+        <h3> key css list properties:</h3>
+        <li> list-style-type: specifies the type of list marker (eg: disc,circle,decimal,etc...)</li>
+        <li> list-style-position: detrmines the position of the liat marker (inside or outside the content flow).</li>
+        <li>  list-atyle-image: sets an image  as the list marker.</li>
+        <li> list-style: a shorthand properyty to set type ,position,and image all at once.</li>
+    </div>
+    <div class="list1">
+        <h1> css list example</h1>
+        <ul>
+            <li> item1</li>
+            <li> item 2</li>
+            <li> item 3</li>
+        </ul>
+        <ol>
+            <li> item 1</li>
+            <li> item 2</li>
+            <li> item 3</li>
+        </ol>
+    </div>
+    <h2>  2.custom list style types:</h2>
+    <li> use the different list-style-type values to craete custom bullet or numbering styles </li>
+    <ul class="aa">
+        <li> item 1</li>
+        <li> item2</li>
+        <ol class="bb">
+            <li> item 1</li>
+            <li> item 2</li>
+        </ol>
+        <li> item 3</li>
+    </ul>
+    <h2> 3.Custom bullets and numbering</h2>
+    <ul class="cc">
+       <li> item 1</li>
+       <li> item 2</li>
+       <li> item 3</li>
+    </ul>
+    <ol class="dd">
+        <li> item 1</li>
+        <li> item 2</li>
+    </ol>
+    
+</body>
+</html>

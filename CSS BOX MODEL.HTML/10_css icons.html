@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> css icons</title>
+    <style>
+        .one:before{
+            content: "\1F385";
+            font-size: 48px;
+        }
+        .two::before{
+            content: "\1F365";
+            font-size: 50px;
+        }
+        .three::before{
+            content: "\1f351";
+            font-size: 50px;
+        }
+        .fn::before{
+            content: "\270e";
+            font-family: algerian;
+            font-size: 50px;
+        }
+        .evo::before{
+            content: "\1f525" ;
+            font-family: algerian;
+            font-size: 30px;
+        }
+        .f7{
+            border: 5px,solid,black;
+            width: 600px;
+            height: auto;
+            border-radius: 20px;
+            font-family: algerian;
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<center>
+    <h1 style="font-family: algerian;">  CSS ICONS</h1>
+</center>
+<hr>
+<body>
+    <h3> introduction</h3>
+    <li> css icons refer to the use of small graphical representations within a web page , styled and controlled using css .</li>
+    <li> they enhance user  experience by providing visual cues and improving navigation.</li>
+    <div class="f7">
+        <h3> ways to implement css icons:</h3>
+        <li> image icons: using  raster or vector images as icons ,controlled by css .</li>
+        <li> icon fonts: utilizing font  libraries like  font awsome  to embeded scalable icons.</li>
+        <li> svg icons: scalable vector graphics allow for flexible ,resolution-independent icons.</li>
+        <li> css  shapes: creating simple icons using pure css shapes and properties.</li>
+
+    </div>
+    <h2> 1.Using unicode</h2>
+    <p> this example uses unicode to display an icon</p>
+    <li> use the content property with unicode escape sequences to display icons.</li>
+    <span class="one">
+          
+    </span>
+    <span class="two">
+
+    </span>
+    <span class="three">
+     
+    </span>
+    <h2> 2.using custom font</h2>
+    <li> uses the content property with the appropriate unicode value and specify the custom font.</li>
+    <div class="fn">
+
+    </div>
+    <h2> 3. using Emoji</h2>
+    <div class="evo"> </div>
+</body>
+</html>
