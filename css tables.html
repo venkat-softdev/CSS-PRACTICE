@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> css tables </title>
+    <link rel="stylesheet" href="./style3.css">
+     
+</head>
+<h1 style="text-align: center; color: red;"> CSS TABLES </h1>
+<hr>
+<body>
+     <h3> introduction</h3>
+     <li> css tables are used to style and format html tables, enhancing their appearance and functionally.</li>
+     <li> they are provide control over table layout ,spacing ,border, colors and responsives.</li>
+     <div class="properties">
+        <h3> key css table properties </h3>
+        <ul>
+            <li>border: define the style ,width, and color of table border. </li>
+            <li> padding: controls the space between cell content and its border. </li>
+            <li> text allign: sets the horizontal alignment of text within cells.</li>
+            <li> vertica-allign: controls the vertical  alignment of content within cells.</li>
+            <li> width/height: sets the dimensions of the table or indivial cells.</li>
+            <li> border-collapse: determines whether table border are collapsed into a single border or separated.</li>
+            <li> background-color: applies background color to the table or specific cells.</li>
+        </ul>
+     </div>
+     <h3> 1.Basic table stylling:</h3>
+       <li> use the table element to define a table.</li>
+       <li>apply styles to the (th) and (td) elements for table headers and data cells,respectively. </li>
+       <li> use the border-collapse property to collapse the table border. </li>
+       <div class="style">
+        <table>
+            <tr>
+                <th> Header1</th>
+                <th> Header2</th>
+                <th> Haeder3</th>
+            </tr>
+            <tr>
+                <td> Data1</td>
+                <td> Data2</td>
+                <td> Data3</td>
+            </tr>
+            <tr>
+                <td> Data 4</td>
+                  <td> Data 5</td>
+                  <td>  Data 6</td>
+            </tr>
+        </table>
+       </div>
+       <h3> 2. Alternative Row Styling:</h3>
+       <li> use the :nth-child selector to target specific table rows. </li>
+       <li> Apply a background color to the even or odd rows to create an alternating row styling effect. </li>
+       <div class="table2">
+            <table>
+                <tr>
+                    <th>Header1</th>
+                    <th> Header2</th>
+                    <th> Header3</th>
+                </tr>
+                <tr>
+                    <td> Data 1</td>
+                    <td> Data 2</td>
+                    <td> Data 3 </td>
+                </tr>
+                <tr>
+                    <td> Data 4</td>
+                    <td> Data 5</td>
+                    <td> Data 6</td>
+                </tr>
+                <tr>
+                    <td> Data 7</td>
+                    <td>Data 8</td>
+                    <td> Data 9</td>
+                </tr>
+            </table>
+       </div>
+       <h3> 3.Highlighting Specific cells:</h3>
+       <li> use the classes to target specific table cells.</li>
+       <li>  Apply a background color to the even or odd rows to create an alternating row styling effect.</li>
+       <div class="table3">
+        <table>
+            <tr>
+                <th> Header1</th>
+                <th> Header2</th>
+                <th> Header3</th>
+            </tr>
+            <tr>
+                <td> Data 1</td>
+                <td> Data 2</td>
+                <td> Data 3</td>
+            </tr>
+            <tr>
+                <td> Data 4</td>
+                <td> Data 5</td>
+                <td> Data 6</td>
+            </tr>
+            <tr>
+                <td> Data 7</td>
+                <td class="venkat"> Data 8</td>
+                <td> Data 9</td>
+            </tr>
+        </table>
+       </div>
+       <h3> 4.Styling specific cells and collumns:</h3>
+       <li> use the :nth-child selector to target specific cells or columns.</li>
+       <li> Apply custom styles to those cells or columns using css properties.</li>
+       <div class="fox">
+        <table>
+            <tr>
+                <th> Header1</th>
+                <th> Header2</th>
+                <th>Header3</th>
+            </tr>
+            <tr>
+                <td> Data 1</td>
+                <td> Data 2</td>
+                <td> Data 3</td>
+            </tr>
+            <tr>
+                <td> Data 4</td>
+                <td> Data 5</td>
+                <td> Data 6</td>
+            </tr>
+            <tr>
+                <td> Data 7</td>
+                <td> Data 8</td>
+                <td> Data 9</td>
+            </tr>
+        </table>
+       </div>
+       <h3> 5.Applying Multiple Styles:</h3>
+       <li> Combine multiple css properties and selctors to apply various styles to specific table cells.</li>
+       <div>
+        <table>
+            <tr>
+                <th> Header1</th>
+                <th> Header2</th>
+                <th> Header3</th>
+            </tr>
+            <tr>
+                <td> Data 1</td>
+                <td> Data 2</td>
+                <td> Data 3</td>
+            </tr>
+            <tr>
+                <td> Data 4</td>
+                <td> Data 5</td>
+                <td> Data 6</td>
+            </tr>
+            <tr>
+                <td> Data 7</td>
+                <td class="fox"> Data 8</td>
+                <td> Data 9</td>
+            </tr>
+        </table>
+       </div>
+</body>
+</html>
