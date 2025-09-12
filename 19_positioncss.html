@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> css position</title>
+    <style>
+        .static{
+            border: 2px solid black;
+            width: 200px;
+            padding: 10px;
+             position: static; 
+            margin: auto;
+        }
+        .relative{
+            border: 2px solid black ;
+            position: relative;
+            padding: 10px;
+            width: 300px;
+            margin: auto;
+        }
+        .fixed{
+            /* position: fixed; */
+             top: 80%;
+            border: 3px solid black;
+            width: 300px;
+            margin: auto;
+            
+        }
+        .absolute{
+            border: 5px solid black;
+             position: relative; 
+            padding: 10px;
+            height: 200px;
+        }
+        .box{
+            border: 3px solid black;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            padding: 10px;
+            
+        }
+        .sticky{
+            border: 5px solid black;
+            padding: 10px;
+            overflow-y: scroll;
+            z-index: 0;
+            height: 300px;
+        }
+       
+        .foc{
+               position: sticky;
+            border: 2px solid black;
+            padding: 20px;
+            background-color: teal;
+            color: gold;
+            top: 0;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;"> CSS POSITION </h1>
+    <hr>
+    <h3> Introduction:</h3>
+    <li> css position properties are used to control the positioning of elements with the layout of web page. </li>
+    <li> they provide flexibility in aligning elemnts relative to their parent container or the view port .</li>
+    <h3> key css position properties:</h3>
+    <ul>
+        <li>  static: the default value,where eleemnts are positioned according to the normal flow of the document.</li>
+        <li> relative: positions the eleemnts relative to its normal position ,without affecting other elements.</li>
+        <li> absolute: positions the elements ralative to the nearest positioned ancestor (other than static).</li>
+        <li> fixed: positions the elements relative to the view port ,so its stays in the same place even if the page is scrolled.</li>
+        <li> sticky : behaves like a combination of realtive and fixed ,sticking to the view port within a certain area.</li>
+    </ul>
+    <h2> 1.Static Position:</h2>
+    <ul><li> this is the default positioning for any html eleemnts. it follows the normal flow of the document.</li></ul>
+    <div class="static">
+        <h2> Static Position </h2>
+        <p> Hi Myself Venkat.</p>
+    </div>
+    <h2> 2.Relative Position:</h2>
+    <ul><li> the elements is positioned realtive to its normal position ,without affecting other elements. </li></ul>
+    <div class="relative">
+        <h2> Relative Position</h2>
+        <p> Hi this is venkat</p>
+    </div>
+    <h2> 3.Fixed Position:</h2>
+    <ul><li> the elements is positioned relative to the view port ,so it stays in the same place even if the page is scrolled.</li></ul>
+    <div class="fixed">
+        <h2> Fixed Position</h2>
+        <p> This is fixed position.</p>
+    </div>
+    <h2> 4.Absolute Position:</h2>
+    <ul><li> the elements is positioned relative to the nearest positioned ancestor (other than static).</li></ul>
+    <div class="absolute">
+        <div class="box">
+            <h2> Absolute Example</h2>
+            <p> this elements has absolute position and is positioned relative to its closest positined ancestor , which is the container elements.</p>
+        </div>
+    </div>
+    <h2> 5.Sticky Position:</h2>
+    <ul><li> the elements behaves like a combination of relative and fixed ,sticking to the viewport within a certain area.</li></ul>
+    <div class="sticky">
+         <h2>  Sticky Position</h2>
+         <p> the elements behaves like a combination of relative and fixed ,sticking to the viewport within a certain area.</p>
+         <div class="foc">
+             <h2>  Sticky Position</h2>
+         <p> the elements behaves like a combination of relative and fixed ,sticking to the viewport within a certain area.</p>
+         </div>
+         
+         <h2 >  Sticky Position</h2>
+         <p> the elements behaves like a combination of relative and fixed ,sticking to the viewport within a certain area.</p>
+         <h2>  Sticky Position</h2>
+         <p> the elements behaves like a combination of relative and fixed ,sticking to the viewport within a certain area.</p>
+         <h2>  Sticky Position</h2>
+         <p> the elements behaves like a combination of relative and fixed ,sticking to the viewport within a certain area.</p>
+
+         <h2>  Sticky Position</h2>
+         <p> the elements behaves like a combination of relative and fixed ,sticking to the viewport within a certain area.</p>
+         <h2>  Sticky Position</h2>
+         <p> the elements behaves like a combination of relative and fixed ,sticking to the viewport within a certain area.</p>
+         <h2>  Sticky Position</h2>
+         <p> the elements behaves like a combination of relative and fixed ,sticking to the viewport within a certain area.</p>
+         <h2>  Sticky Position</h2>
+         <p> the elements behaves like a combination of relative and fixed ,sticking to the viewport within a certain area.</p>
+         <h2>  Sticky Position</h2>
+         <p> the elements behaves like a combination of relative and fixed ,sticking to the viewport within a certain area.</p>
+         <p> the elements behaves like a combination of relative and fixed ,sticking to the viewport within a certain area.</p>
+
+         <p> the elements behaves like a combination of relative and fixed ,sticking to the viewport within a certain area.</p>
+         <p> the elements behaves like a combination of relative and fixed ,sticking to the viewport within a certain area.</p>
+         <p> the elements behaves like a combination of relative and fixed ,sticking to the viewport within a certain area.</p>
+         <p> the elements behaves like a combination of relative and fixed ,sticking to the viewport within a certain area.</p>
+         <p> the elements behaves like a combination of relative and fixed ,sticking to the viewport within a certain area.</p>
+         <p> the elements behaves like a combination of relative and fixed ,sticking to the viewport within a certain area.</p>
+         <p> the elements behaves like a combination of relative and fixed ,sticking to the viewport within a certain area.</p>
+         <p> the elements behaves like a combination of relative and fixed ,sticking to the viewport within a certain area.</p>
+         <p> the elements behaves like a combination of relative and fixed ,sticking to the viewport within a certain area.</p>
+         <p> the elements behaves like a combination of relative and fixed ,sticking to the viewport within a certain area.</p>
+         <p> the elements behaves like a combination of relative and fixed ,sticking to the viewport within a certain area.</p>
+         <p> the elements behaves like a combination of relative and fixed ,sticking to the viewport within a certain area.</p>
+         <p> the elements behaves like a combination of relative and fixed ,sticking to the viewport within a certain area.</p>
+         <p> the elements behaves like a combination of relative and fixed ,sticking to the viewport within a certain area.</p>
+         <p> the elements behaves like a combination of relative and fixed ,sticking to the viewport within a certain area.</p>
+         <p> the elements behaves like a combination of relative and fixed ,sticking to the viewport within a certain area.</p>
+         <p> the elements behaves like a combination of relative and fixed ,sticking to the viewport within a certain area.</p>
+         <p> the elements behaves like a combination of relative and fixed ,sticking to the viewport within a certain area.</p>
+         <p> the elements behaves like a combination of relative and fixed ,sticking to the viewport within a certain area.</p>
+         <p> the elements behaves like a combination of relative and fixed ,sticking to the viewport within a certain area.</p>
+         <p> the elements behaves like a combination of relative and fixed ,sticking to the viewport within a certain area.</p>
+         <p> the elements behaves like a combination of relative and fixed ,sticking to the viewport within a certain area.</p>
+         <p> the elements behaves like a combination of relative and fixed ,sticking to the viewport within a certain area.</p>
+         <p> the elements behaves like a combination of relative and fixed ,sticking to the viewport within a certain area.</p>
+         <p> the elements behaves like a combination of relative and fixed ,sticking to the viewport within a certain area.</p>
+         <p> the elements behaves like a combination of relative and fixed ,sticking to the viewport within a certain area.</p>
+         <p> the elements behaves like a combination of relative and fixed ,sticking to the viewport within a certain area.</p>
+         <p> the elements behaves like a combination of relative and fixed ,sticking to the viewport within a certain area.</p>
+         <p> the elements behaves like a combination of relative and fixed ,sticking to the viewport within a certain area.</p>
+         <p> the elements behaves like a combination of relative and fixed ,sticking to the viewport within a certain area.</p>
+         <p> the elements behaves like a combination of relative and fixed ,sticking to the viewport within a certain area.</p>
+         <p> the elements behaves like a combination of relative and fixed ,sticking to the viewport within a certain area.</p>
+         <p> the elements behaves like a combination of relative and fixed ,sticking to the viewport within a certain area.</p>
+         <p> the elements behaves like a combination of relative and fixed ,sticking to the viewport within a certain area.</p>
+         <p> the elements behaves like a combination of relative and fixed ,sticking to the viewport within a certain area.</p>
+         <p> the elements behaves like a combination of relative and fixed ,sticking to the viewport within a certain area.</p>
+         <p> the elements behaves like a combination of relative and fixed ,sticking to the viewport within a certain area.</p>
+         <p> the elements behaves like a combination of relative and fixed ,sticking to the viewport within a certain area.</p>
+         <p> the elements behaves like a combination of relative and fixed ,sticking to the viewport within a certain area.</p>
+         <p> the elements behaves like a combination of relative and fixed ,sticking to the viewport within a certain area.</p>
+         <p> the elements behaves like a combination of relative and fixed ,sticking to the viewport within a certain area.</p>
+         <p> the elements behaves like a combination of relative and fixed ,sticking to the viewport within a certain area.</p>
+         <p> the elements behaves like a combination of relative and fixed ,sticking to the viewport within a certain area.</p>
+         <p> the elements behaves like a combination of relative and fixed ,sticking to the viewport within a certain area.</p>
+         <p> the elements behaves like a combination of relative and fixed ,sticking to the viewport within a certain area.</p>
+         <p> the elements behaves like a combination of relative and fixed ,sticking to the viewport within a certain area.</p>
+         <p> the elements behaves like a combination of relative and fixed ,sticking to the viewport within a certain area.</p>
+
+    </div>
+</body>
+</html>
