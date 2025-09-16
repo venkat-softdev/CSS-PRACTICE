@@ -15,12 +15,118 @@
     left: 50px;
     z-index: 1;
    }
+   .box1{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    left: 300px;
+    top: 300px;
+    position: absolute;
+    z-index: 4;
+    border: 5px solid;
+    
+   }
+   .box2{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    top:350px;
+    left: 350px;
+    z-index: 3;
+    border: 5px solid;
+    
+   }
+   .box3{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+   background-color: blue;
+   top: 400px;
+   left: 400px;
+  z-index:2;
+  border: 5px solid;
+
+   }
+   .box4{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    top: 450px;
+    left: 450px;
+    position: absolute;
+    z-index: 1;
+    border:5px solid;
+   }
+   .box5{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-color: green;
+    top: 500px;
+    left: 500px;
+    z-index: 0;
+    border: 5px solid ;
+   }
+   .one{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    top: 700px;
+    left: 400px;
+    position: absolute;
+   }
+   .two{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    top: 750px;
+    left:450px;
+    position: absolute;
+    z-index: -1;
+   }
+    .three{
+        width: 100px;
+        height: 100px;
+        top: 800px;
+        left: 200px;
+        background-color: dodgerblue;
+        position:absolute;
+    }
+    .four{
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        top: 850px;
+        left: 250px;
+        z-index: 1;
+        position:absolute;
+    }
 </style>
 <body>
 
     </ul>
     <div class="stacking"></div>
     <div style="width: 200px; height: 200px; background-color: red;"> </div>
+    <hr>
+    <h2> Stacking order with multiple elements:</h2>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5"></div>
+    
+    <div class="negative">
+        <div class="one"></div>
+        <div class="two"></div>
+    </div>
+
+
+     <div class="positive">
+        <div class="three"></div>
+        <div class="four"></div>
+    </div>
+
 </body>
 
 </html>
