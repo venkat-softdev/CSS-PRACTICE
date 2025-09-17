@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CSS OVERFLOW</title>
+    <style>
+        .con{
+            width: 200px;
+            height: 200px;
+            border: 3px solid black;
+            position:absolute;
+             left: 200px;
+            overflow: visible;
+            padding: 5px;
+         }
+         .hidden{
+            width: 200px;
+            height: 200px;
+            border: 3px solid black;
+            position: relative;
+            left: 200px;
+            padding: 5px;
+            overflow: hidden;
+
+         }
+         .scroll{
+            width: 400px;
+            height: 300px;
+            border: 3px solid black;
+            position: relative;
+            left: 200px;
+            padding: 10px;
+            border-radius: 25px;
+            overflow: scroll;
+         }
+         .auto{
+            border: 5px solid;
+            width: 400px;
+            height: 300px;
+            position: relative;
+            left: 200px;
+            overflow: auto;
+            border-radius: 50px;
+            padding: 10px;
+         }
+         .flow{
+            border: 4px solid ;
+            height: 300px;
+            width: 400px;
+            overflow-x: scroll;
+            position: relative;
+            left: 200px; 
+        border-radius: 30px; 
+          padding: 10px;
+    }
+    </style>
+</head>
+<body>
+    <div class="key">
+    <h2> Key properties of Overflow:</h2>
+    <ul>
+        <li> Overflow: Sets the behaviour for both horizontal and vertical overflow (eg; 'auto' 'hidden' 'scroll' 'visible')</li>
+        <li> overflow-x: contrlos the overflow on the horizontal axis.</li>
+        <li> overfllow-y: controls the overflow on the vertical axis.</li>
+    </ul>
+    </div>
+
+    <div class="value">
+        <h2> value of overflow properties:</h2>
+        <ul>
+            <li> visible: default value, content is not clipped,and may be rendered outside the box.</li>
+            <li> hidden: content is clipped ,and the rest is hidden.</li>
+            <li> scroll: content is clipped ,but scrolling is always visible.</li>
+            <li> auto: content is clipped,and a scrollbar is visible only if neccesarry.</li>
+        </ul>
+    </div>
+    <h3>1.Overflow: Visible</h3>
+    <ul><li> Use overflow:visible to display the content that overflows the container.</li></ul>
+    <div class="con">
+        <h1> Overflow visible:</h1>
+        <p> This is the example of overflow visible</p>
+       
+    </div>
+
+    <h2 style="margin-top: 300px;">2.Overflow :Hidden</h2>
+       <ul><li> Use the overflow:hidden to hide the control that overflows the container.</li></ul>
+       <div class="hidden">
+        <h3>overflow:hidden</h3>
+        <p> This is an example of overflow hidden.</p>
+        <p> This is an example of overflow hidden.</p>
+        <p> This is an example of overflow hidden.</p>
+        <p> This is an example of overflow hidden.</p>
+        <p> This is an example of overflow hidden.</p>
+ </div>
+ <h2> 3.Overflow:Scroll</h2>
+ <ul><li>Use the scroll to add scrollers to the container when the content overflows.</li></ul>
+ <div class="scroll">
+    <h3 style="text-align: center;"> Overflow: Scroll</h3>
+    <p> 
+        Hi my self venkat from vadalur</p>
+        <p> I pursuing my bachlor degree in St.Anne's college of engineering and technology</p>
+        <p> regard my skill set i have better experience from frontend end and backend development and comfortable working with cloud technologies and database</p>
+        <p> In terms of hobbies i explore social media and updating me revelant tech world and build some web applicatiions align to my carrier goal. </p>
+        <p> one of my sternghten is self learning capacity and quick learner and available 24/7 work well under pressure and understand complex problems quickly and provide well strutured solutions and coming to my weakness some critical situatoions and technical bug can't handle that easily but my self learning capacity and take it policy solve this situation easily.</p>
+        <p> In short my explore job oppurtunties in our company and grow proffesionlly </p>
+        <p> in long time aspire become a senior developer and SME</p>
+    
+ </div>
+      
+ <h2>4.Overflow:Auto</h2>
+<ul><li> Use Overflow:auto to add scrollbars to the container only when neccesarry.</li>
+</ul>
+<div class="auto">
+    <h2 style="text-align: center; text-decoration: underline; font-family: dubai;
+    font-size: 30px;">Overflow :Auto</h2>
+            <p> 
+        Hi my self venkat from vadalur</p>
+     <p> I pursuing my bachlor degree in St.Anne's college of engineering and technology</p>
+        <p> regard my skill set i have better experience from frontend end and backend development and comfortable working with cloud technologies and database</p>
+        <p> In terms of hobbies i explore social media and updating me revelant tech world and build some web applicatiions align to my carrier goal. </p>
+        <p> one of my sternghten is self learning capacity and quick learner and available 24/7 work well under pressure and understand complex problems quickly and provide well strutured solutions and coming to my weakness some critical situatoions and technical bug can't handle that easily but my self learning capacity and take it policy solve this situation easily.</p>
+        <p> In short my explore job oppurtunties in our company and grow proffesionlly </p>
+        <p> in long time aspire become a senior developer and SME</p>
+    
+</div>
+<h2> 5.Overflow-x,Overflow-Y:Hidden</h2>
+<ul>
+    <li> Use overflow-x: scroll to add horizontal scroolbar when the content overflows horizontally.</li>
+    <li> use overfl0ow-y: Hidden to hide the vertical overflow.</li>
+</ul>
+<div class="flow">
+    <p> 
+        Hi my self venkat from vadalur</p>
+     <p> I pursuing my bachlor degree in St.Anne's college of engineering and technology</p>
+        <p> regard my skill set i have better experience from frontend end and backend development and comfortable working with cloud technologies and database</p>
+        <p> In terms of hobbies i explore social media and updating me revelant tech world and build some web applicatiions align to my carrier goal. </p>
+        <p> one of my sternghten is self learning capacity and quick learner and available 24/7 work well under pressure and understand complex problems quickly and provide well strutured solutions and coming to my weakness some critical situatoions and technical bug can't handle that easily but my self learning capacity and take it policy solve this situation easily.</p>
+        <p> In short my explore job oppurtunties in our company and grow proffesionlly </p>
+        <p> in long time aspire become a senior developer and SME</p>
+    
+</div>
+</body>
+
+</html>
