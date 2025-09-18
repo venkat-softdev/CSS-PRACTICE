@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .two{
+            width: 300px;
+            height: 300px;
+            background-color: blue;
+             position: relative; 
+            top: 50px;
+            left: 200px;
+            opacity: 0.6;
+        }
+        .one{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+             position: absolute; 
+            opacity: 1;
+          top: 100px;
+          left: 50%;
+          
+        }
+       #opacity{
+        width: 300px;
+        height: 300px;
+        background-color: teal;
+        color: white;
+        position: relative;
+        left: 100px;
+        padding: 10px;
+        
+       }
+    </style>
+</head>
+<body>
+    <h2> syntax and usage of opacity</h2>
+    <ul>
+        <li> the opacity property is ued to define the transparency level of element.</li>
+        <li> it allows designers to craete overlays ,fade effects, and other visual effects.</li>
+        <li> the opacity property takes values fom 0to1,where 0 is fully transparent and 1 is full opaque.</li>
+        <li> example: opacity:0.5; will render the elements with 50% transparency.</li>
+    </ul>
+    <h2>1.changing elements opacity:</h2>
+    <li> use the opacity property to adjust the transparent of an elements.</li>
+    <li> the values ranges from 0 (fully transparent) to 1 (fully opaque)</li>
+    <div class="two">
+       <div class="one"></div>
+    </div>
+    <h2>2.Applying opacity on text</h2>
+    <ul>
+        <li> opacity can also be applied to text inside an elements.</li>
+        <li> the opacity value of the text affects the text and any child elements.</li>
+    </ul>
+    <div id="opacity" >
+        <h2> Opacity example</h2>
+         <p style="opacity: 0.5;"> the paragraph has applied opacity</p>
+    </div>
+</body>
+</html>
