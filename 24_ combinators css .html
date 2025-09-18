@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CSS COMBINATORS</title>
+    <style>
+         .con{
+            border:2px solid;
+            width: 400px;    
+            position: relative;
+            left: 100px;
+            padding: 5px;
+            border-radius: 20px;  
+            overflow: auto;
+            height: 300px;
+          }
+          .con p{
+            color: blue;
+          }
+          .child{
+            border: 2px solid;
+            width: 400px;
+            position: relative;
+            left: 100px;
+            padding: 5px;
+            border-radius: 20px;
+          }
+          .child>p{
+            color: red;
+          }
+          .adj{
+            border: 2px solid ;
+        width: 400px;
+        padding: 5px;
+        position: relative;
+        left: 100px;
+        border-radius: 20px;
+        overflow: auto;
+        height: 300px;
+          } 
+          .adj p+p{
+            color: blue;
+          }
+          .general{
+            width: 400px;
+            height: 300px;
+            border: 2px solid ;
+            position: relative;
+            left: 100px;
+            padding: 5px;
+            overflow: auto;
+            border-radius: 20px ;
+          }
+          .general p~span{
+            color: green;
+          }
+    </style>
+</head>
+<body>
+    <h2> Types of css combinators:</h2>
+    <ul>
+        <li> Descendent combinators (space): Targets all Descendent of a specified element. <li>
+            <li> Child Combinator (>): Targets all immediate children of a specified element.</li>
+            <li> Adjacent sibling combinator(+): Targets the immediate next sibling of a specified elements.</li>
+            <li> General sibling combinator(-): targets all siblings that share the same parent as the specified elements.</li>
+    </ul>
+    <h2>1.Descendent Selector:</h2>
+    <ul>
+        <li> Use the Descendent selector (space) to target elements that are Descendent of another elements.</li>
+        <li> in the example, the paragraph inside the container div is styled differently.</li>
+    </ul>
+      <div class="con">
+        <h2> This is Descendent topic:</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In facere nulla possimus sint similique consequatur.</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In facere nulla possimus sint similique consequatur.</p>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In facere nulla possimus sint similique consequatur.</p>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In facere nulla possimus sint similique consequatur.</p>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In facere nulla possimus sint similique consequatur.</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In facere nulla possimus sint similique consequatur.</p>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In facere nulla possimus sint similique consequatur.</p>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In facere nulla possimus sint similique consequatur.</p>
+
+
+    </div>
+    <h2>2.Child selector:</h2>
+    <ul>
+        <li> Use the child selector > to target elements that are direct children of another elements .</li>
+        <li> In the example ,only the direct child paragraph of the div is styled differently.</li>
+    </ul>
+    <div class="child">
+        <h2> Child Seclector (>):</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, consequatur?</p>
+       <span><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, itaque!</p></span>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, ab?</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, dolorum!</p>
+    </div>
+    <h2> 3.Adjacent Sibling Selector:</h2>
+    <ul>
+        <li> Use the adjacent sibling selctor + to target an element that directly follows anaother elements.</li>
+        <li> In the example the second paragraph is styled differently from the first paragraph.</li>
+    </ul>
+    <div class="adj">
+        <h2> This is Adjacent combinators </h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, repudiandae.</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, repudiandae.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, repudiandae.</p>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, repudiandae.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, repudiandae.</p>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, repudiandae.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, repudiandae.</p>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, repudiandae.</p>   
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, repudiandae.</p>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, repudiandae.</p>
+
+    </div>
+    <h2> 4.General Sibling selector:</h2>
+      <ul><li> use the General sibling combinator (~) to target that follow another element.</li></ul>
+      <div class="general">
+        <h2> General Sibling combinator</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, delectus?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, delectus?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, delectus?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, delectus?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, delectus?</p>
+         <span><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, delectus?</p></span>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, delectus?</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, delectus?</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, delectus?</p>
+      </div>
+</body>
+</html>

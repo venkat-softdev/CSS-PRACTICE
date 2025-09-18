@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Float css </title>
+    <style>
+        .con{
+            border: 3px solid;
+            width: 400px;
+            height: 300px;
+            position: relative;
+            left: 200px;
+            top: 10px;
+            
+        }
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            float: left;
+            border: 1px solid;
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            float:right;
+            position: relative;
+            top: 50px;
+            border: 1px solid;
+            
+        }
+        .custom{
+          border: 3px solid;
+          width: 300px;
+          height: 200px;
+          position: relative;
+          left: 200px;
+              
+        }
+       .box3{
+        float: right;
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        border: 1px solid;
+         position: absolute;
+         top: 50px;
+         border-radius: 25px;
+       }
+       .box4{
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        position: relative;
+        float: right;
+        top: 50px;
+        border: 1px solid;
+        border-radius: 25px;
+
+       }
+       .key{
+        border: 5px solid;
+        width: 400px;
+        height: 300px;
+         position: relative; 
+        left: 200px;
+        padding: 5px;
+        overflow: auto;
+        top: 20px;
+        border-radius: 25px;
+       }
+         
+    </style>
+</head>
+<body>
+    <div class="key">
+    <h2> Key css float properties</h2>
+    <ul><li> float:left; float the elements to the left side of its container.</li></ul>
+    <ul><li> float:right; float the elements to the right side of its container.</li></ul>
+    <ul><li> float:none; resets the float property mainatining the normal document flow.</li></ul>
+    <ul><li> clear: controls how elements following a floacted elements behave (eg; claer:both; prevents elements from flaoting on both sides.) </li></ul>
+    <h2> Key css float properties</h2>
+    <ul><li> float:left; float the elements to the left side of its container.</li></ul>
+    <ul><li> float:right; float the elements to the right side of its container.</li></ul>
+    <ul><li> float:none; resets the float property mainatining the normal document flow.</li></ul>
+    <ul><li> clear: controls how elements following a floacted elements behave (eg; claer:both; prevents elements from flaoting on both sides.) </li></ul>
+    <h2> Key css float properties</h2>
+    <ul><li> float:left; float the elements to the left side of its container.</li></ul>
+    <ul><li> float:right; float the elements to the right side of its container.</li></ul>
+    <ul><li> float:none; resets the float property mainatining the normal document flow.</li></ul>
+    <ul><li> clear: controls how elements following a floacted elements behave (eg; claer:both; prevents elements from flaoting on both sides.) </li></ul>
+    <h2> Key css float properties</h2>
+    <ul><li> float:left; float the elements to the left side of its container.</li></ul>
+    <ul><li> float:right; float the elements to the right side of its container.</li></ul>
+    <ul><li> float:none; resets the float property mainatining the normal document flow.</li></ul>
+    <ul><li> clear: controls how elements following a floacted elements behave (eg; claer:both; prevents elements from flaoting on both sides.) </li></ul>
+        </div>
+    <h2> 1.HTML Structure:</h2>
+    <ul><li> create a container elements with two child eleemnts ,one for the left floating elements and another for the right floating elements.</li></ul>
+    <div class="con">
+        <div class="box1"></div>
+        <div class="box2"></div>
+    </div>
+    <h2> 2.Apply CSS Styles. </h2>
+    <ul><li> Add your custom css styles to the (container,left,and right) classes to control the apprenace and positioning of the floating elements. </li></ul>
+    <div class="custom">
+        <div class="box3"></div>
+        <div class="box4"></div>
+    </div>
+</body>
+</html>
