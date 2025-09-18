@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS PSEUDO- CLASSES</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        i{
+            font-size: 50px;
+           background-color:  white;
+           color: black;
+            text-decoration: none;
+             
+            
+            
+        }
+        i:hover{
+             
+              
+              color:orangered;
+              transition: 0.5s;
+        }
+        i:visited{
+            color: blue;
+        }
+       .one{
+        text-decoration: none;
+        border: 2px solid;
+        padding: 5px;
+        color: white;
+        background-color: orangered;
+       }
+       .one:hover{
+        background-color: red;
+       }
+       .one:visited {
+        color: black;
+       }
+        a{
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+
+        }
+        a:visited{
+            color: blue;
+        }
+        .fun:focus{
+            color: blue;
+            background-color: yellow;
+
+            
+        }
+        .fun{
+            border: 5px solid;
+            padding: 10px;
+            position: relative;
+            overflow: auto;
+            border-radius: 20px;
+            margin-left: 200px;
+        }
+        .para::first-letter{
+           font-size: 2em;
+           color: red;
+        }
+        
+        .two::before{
+            content: "This is some content:";
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 18px;
+        }
+        .evo>p:first-child{
+            color: blue;
+        }
+        .evo>p:nth-child(2){
+            color: gold;
+        }
+    </style>
+</head>
+<body>
+    <div class="key">
+        <h2> CSS Pesudo-classes:</h2>
+        <ul>
+            <li> :hover- targets an elements when its being hovered over by a user.</li>
+            <li> : focus- targets an elements when its gains(eg; input field)</li>
+            <li> :first-child- target the first child elements within a parent elements.</li>
+            <li> :nth-child- tagrets a specific child within a parent based on their order.</li>
+            <li> :not- targets elements that do not match a give selector.</li>
+        </ul>
+        
+
+    </div>
+    <div class="key2">
+        <h2> Pesudo-elements:</h2>
+        <ul>
+            <li> ::before- inserts content before the content of an eleemnts</li>
+            <li> ::after- insert content after the content of an eleemnts</li>
+            <li> ::first-letter-targets the first letter of an eleemnts.</li>
+            <li>::first-line- targets the first line of a block-level elements.</li>
+        </ul>
+    </div>
+    <h2> 1.Pesudo-classes:hover</h2>
+    <ul>
+        <li> :hover-styles an elements when a user hovers over it.</li>
+        <li> :visited-styles visited links diiferently.</li>
+        <li> :focus -styles an elements when it gets focus.</li>
+    </ul>
+    <div class="box">
+    <p> HI MYSELF VENKAT <a href="https://github.com/venkat-softdev"> <i class="fa-brands fa-github"></i></a></p>
+    <p> THIS IS MY WEBSITE <a href="https://www.example.com" class="one">LINK</a></p>
+    </div>
+    <h2>2.Pseudo-classes:visited</h2>
+    <div class="visit">
+        <p>This is a pragraph with a <a href="https://www.example.com"> VISITED LINK</a>.</p>
+    </div>
+    <h2> 3.Pseudo-classes:focus</h2>
+     
+       <input type="text" placeholder="click me after some fun " class="fun">
+     <h2> 4.pseudo-elements :: first-letter</h2>
+     <ul>
+        <li> ::first-letter: styles the first letter of am elements</li>
+        <li> :: before : inserts content before the content of an elements.</li>
+     </ul>
+
+     <p class="para"> This is a paragraph of some content.</p>
+    
+     <h2>5.pseudo-elements::before</h2>
+     <p class="two">this a paragraph</p>
+       <h2>6.Pseudo-classes:first-child</h2>
+      <div class="evo">
+        <p> this is paragraph</p>
+        <p> this is a paragraph</p>
+      </div>
+</body>
+</html>
