@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEX FLOW IN CSS</title>
+    <style>
+        .flow{
+            width: 600px;
+            height: 600px;
+            border: 3px solid black;
+            margin: auto;
+            display: flex;
+            flex-flow: column wrap;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<h1 style="text-align: center;"> Flex Flow in Css</h1>
+<hr>
+<body>
+    <div class="flow">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+        <div class="box">box4</div>
+        <div class="box">box5</div>
+        <div class="box">box6</div>
+    </div>
+</body>
+</html>
