@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALIGN CONTENT IN CSS</title>
+    <style>
+        .container{
+            width: 700px;
+            height: 500px;
+            border: 3px solid black;
+            margin: 30px auto;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: flex-end;
+            
+        }
+        .boxes{
+            width: 100px;
+            height: 100px;
+            background-color: lightgreen;
+            margin: 10px;
+            padding: 5px;
+            text-align: center;
+          
+        }
+        .con{
+            width: 700px;
+           height: 500px;
+           border: 3px solid black;
+           margin: 30px auto;
+           display: flex;
+           flex-wrap: wrap;
+           align-content: center;
+           
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: dodgerblue;
+            margin: 10px;
+            padding: 5px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<h1 style="text-align: center;"> Align Content</h1>
+<hr>
+<body>
+    <!-- the property of align content:
+    1.flex-start
+    2.flex-start
+    3.center
+    4.space-between
+    5.space-around
+    6.stretch
+    these property are used in align content. -->
+
+
+    <div class="container">
+        <div class="boxes"> box1</div>
+        <div class="boxes"> box2</div>
+        <div class="boxes"> box3</div>
+         <div class="boxes"> box4</div>
+        <div class="boxes"> box5</div>
+        <div class="boxes"> box6</div>
+        <div class="boxes"> box7</div>
+        <div class="boxes"> box8</div>
+        <div class="boxes"> box9</div>
+    </div>
+
+   <div class="con">
+    <div class="box">box1</div>
+    <div class="box">box2</div>
+    <div class="box">box3</div>
+    <div class="box">box4</div>
+    <div class="box">box5</div>
+    <div class="box">box6</div>
+    <div class="box">box7</div>
+    <div class="box">box8</div>
+    <div class="box">box9</div>
+   </div>
+
+
+</body>
+</html>
