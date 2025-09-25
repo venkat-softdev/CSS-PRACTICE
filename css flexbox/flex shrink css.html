@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEX SHRINK IN CSS</title>
+    <style>
+        .flex-container{
+            width: 400px;
+            height: 400px;
+            border: 3px solid black;
+            margin: 30px auto;
+            display: flex;
+            align-items: flex-end;
+        }
+        .flex-item{
+            width: 100px ;
+            height: 100px;
+            background-color: red;
+            margin: 10px ;
+            padding: 5px ;
+            text-align: center;
+        }
+    </style>
+</head>
+<h1 style="text-align: center;"> Flex Shrink</h1>
+<hr>
+<body>
+     <div class="flex-container">
+        <div class="flex-item" style="flex-shrink: 2; height: 200px;">Item 1</div>
+        <div class="flex-item" style="flex-shrink: 1; height: 300px;">Item 2</div>
+        <div class="flex-item" style="flex-shrink: 3; height: 350px;">Item 3</div>
+      </div>
+</body>
+</html>
