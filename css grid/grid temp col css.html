@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID TEMPLATE COLUMN</title>
+    <style>
+        .container{
+            display: grid;
+            background-color: violet;
+            grid-template-columns: 1fr 1fr 1fr;
+            margin-top:30px  ;
+        }
+        .container div{
+            border: 2px solid black;
+           padding: 10px;
+            text-align: center;
+            background-color: #ddd;
+        }
+        .container :hover{
+            background-color: yellow;
+            transition: 0.2s;
+            font-size: 20px;
+        }
+        .column{
+            display: grid;
+            background-color: dodgerblue;
+            margin-top: 30px;
+            grid-template-columns: repeat(4,1fr );
+        }
+        .column div{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        .box1:hover{
+             background-color: pink;
+             transition: 0.2s;
+             font-size: 30px;
+             color: white;
+        }
+        .box2:hover{
+            background-color: aqua;
+            transition: 0.2s;
+            font-size: 30px;
+            color: white;
+        }
+        .box3:hover{
+            background-color: blueviolet;
+            transition: 0.2s;
+            font-size: 30px;
+            color: white;
+        }
+        .box4:hover{
+            background-color: orange;
+            transition: 0.2s;
+            font-size: 30px;
+            color: white;
+        }
+        .item-con{
+            display: grid;
+            background-color: pink;
+            margin-top: 30px;
+            grid-template-columns: 1fr 2fr 1fr;
+           
+        }
+        .item-con div{
+            border: 1px solid black;
+            padding: 15px;
+            text-align: center;
+            
+        }
+        .box-container{
+            background-color: chocolate;
+            margin-top: 30px;
+            grid-template-columns: auto auto auto;
+            display: grid;
+        }
+        .box-container div{
+            padding: 10px;
+            border: 1px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+<h1 style="text-align: center;"> Grid Template Column</h1>
+<hr>
+<body>
+    <!-- fixed size column -->
+     
+       <div class="container">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+       </div>
+                   
+      <!-- repeat function -->
+
+       <div class="column">
+        <div class="items box1">box1</div>
+        <div class="items box2">box2</div>
+        <div class="items box3">box3</div>
+         <div class="items box4">box4</div> 
+       </div>
+
+          <!-- fractional units       -->
+
+          <div class="item-con">
+             <div class="con">box1</div>
+             <div class="con">box2</div>
+             <div class="con">box3</div>
+            
+          </div>
+
+          <!-- auto-sized column -->
+           <div class="box-container">
+            <div class="boxes">box1</div>
+            <div class="boxes">box2</div>
+            <div class="boxes">box3</div>
+           
+           </div>
+</body>
+</html>
