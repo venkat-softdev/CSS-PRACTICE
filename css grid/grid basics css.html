@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid basics</title>
+    <style>
+        .container{
+            display: grid;
+            background-color: dodgerblue;
+            gap: 10px;
+            grid-template-columns: auto auto auto ;
+            padding: 10px;
+           margin: 30px;
+
+        }
+        .box{
+            background-color: #ddd;
+            padding: 5px ;
+            text-align: center;
+          
+        }
+        .grid-con{
+            display: grid;
+            background-color: violet;
+            gap: 20px;
+            padding: 10px;
+            grid-template-columns: 1fr 1fr 1fr;
+            border-radius: 20px;
+        }
+        .item{
+            background-color: #ddd;
+            text-align: center;
+            padding: 10px;
+            border-radius: 20px;
+        }
+        .grid-container{
+            display: grid;
+            background-color: teal;
+            gap: 10px;
+            padding: 10px;
+            margin-top: 30px;
+            grid-template-columns: repeat(6,1fr);
+        }
+        .grid-box{
+            background-color: #ddd;
+            text-align: center;
+            padding: 10px;
+            
+        }
+        .grid-box:hover{
+            background-color: aqua;
+            transition: 0.2s;
+        }
+        .itembox{
+            display: grid;
+            margin-top: 30px ;
+            background-color: orangered;
+            gap: 10px ;
+            padding: 10px;
+            grid-template-columns: 1fr 2fr 1fr;
+             
+        }
+        .boxes{
+            background-color: #ddd;
+            padding: 10px;
+            text-align: center;
+             
+        }
+        .boxes:hover{
+            background-color: dodgerblue;
+            color: white;
+            font-size: 30px;
+            transition: 0.2s;
+         
+        }
+        .box-con{
+            background-color: pink;
+            display: grid;
+            padding: 10px;
+            gap: 10px;
+            margin-top: 20px;
+            grid-template-columns: repeat( auto-fit,minmax(400px,1fr));
+        }
+        .boxcon{
+            background-color: #ddd;
+            padding: 10px ;
+            text-align: center;
+        }
+        .boxcon:hover{
+            background-color: blue;
+            color: white;
+          transition: 0.2s;
+          font-size: 30px;
+        }
+
+    </style>
+</head>
+<h1 style="text-align: center;"> Grid Basics</h1>
+<hr>
+<body>
+    <div class="container">
+        <div class="item1 box">box1</div>
+        <div class="item2 box">box2</div>
+        <div class="item3 box">box3</div>
+        <div class="item4 box">box4</div>
+        <div class="item5 box">box5</div>
+        <div class="item6 box">box6</div>
+         <div class="item4 box">box7</div>
+        <div class="item5 box">box8</div>
+        <div class="item6 box">box9</div>
+
+    </div>
+       <div class="grid-con">
+          <div class="item">box1</div>
+          <div class="item">box2</div>
+          <div class="item">box3</div>
+          <div class="item">box4</div>
+          <div class="item">box5</div>
+          <div class="item">box6</div>
+       </div>
+       <div class="grid-container">
+        <div class="grid-box">box1</div>
+        <div class="grid-box">box2</div>
+        <div class="grid-box">box3</div>
+        <div class="grid-box">box4</div>
+        <div class="grid-box">box5</div>
+        <div class="grid-box">box6</div>
+       </div>
+
+       <div class="itembox">
+           <div class="boxes">box1</div>
+           <div class="boxes">box2</div>
+           <div class="boxes">box3</div>
+           <div class="boxes">box4</div>
+           <div class="boxes">box5</div>
+           <div class="boxes">box6</div>
+       </div>
+       <div class="box-con">
+       <div class="boxcon">box1</div>
+       <div class="boxcon">box2</div>
+       <div class="boxcon">box3</div>
+       <div class="boxcon">box4</div>
+       <div class="boxcon">box5</div>
+       <div class="boxcon">box6</div>
+       </div>
+</body>
+</html>
