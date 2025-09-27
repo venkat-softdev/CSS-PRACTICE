@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID TEMPLATE ROW </title>
+    <style>
+     .container{
+        background-color: pink;
+        display: grid;
+        grid-template-rows: 100px 50px 50px 100px;
+        margin-top: 30px; 
+        
+     }
+     .container div{
+        border: 1px solid black;
+        padding: 10px;
+        text-align: center;
+        font-size: 20px;
+     }
+     .box-con{
+        background-color: dodgerblue;
+        margin-top: 30px;
+        display: grid;
+        grid-template-rows: repeat(4,1fr);
+     }
+     .box-con div{
+        padding: 10px;
+        border: 1px solid black;
+        text-align: center;
+        font-size: 20px;
+     }
+     .items-con{
+        background-color: brown;
+        display: grid;
+        margin-top: 30px;
+        grid-template-rows:1fr 2fr 1fr;
+     }
+     .items-con div{
+        border: 1px solid black;
+        padding: 10px;
+        text-align: center;
+     }
+     .boxes{
+        display: grid;
+       
+        margin-top: 30px;
+        grid-template-rows: auto auto auto;
+     }
+    .boxes div{
+        border: 1px solid black;
+        padding: 10px;
+        text-align: center;
+        background-color: violet;
+    }
+    </style>
+</head>
+<h1 style="text-align: center;">Grow Template Row </h1>
+<hr>
+<body>
+<!--  
+fixed function -->
+ <div class="container">
+    <div class="box">box1</div>
+    <div class="box">box2</div>
+    <div class="box">box3</div>
+    <div class="box">box4</div>
+
+</div>
+   <!-- repeat function     -->
+
+ <div class="box-con">
+    <div class="box">box1</div>
+    <div class="box">box2</div>
+    <div class="box">box3</div>
+    <div class="box">box4</div>
+
+    </div>
+     
+    <!-- fractional units -->
+   <div class="items-con">
+    <div class="box">box1</div>
+    <div class="box">box2</div>
+    <div class="box">box3</div>
+   </div>
+
+   <!-- auto  -->
+   <div class="boxes">
+    <div class="items">box1</div>
+    <div class="items">box2</div>
+    <div class="items">box3</div>
+   </div>
+</body>
+</html>
