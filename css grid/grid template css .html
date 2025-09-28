@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID TEMPLATE</title>
+    <style>
+        .container{
+            
+            padding: 10px;
+            display: grid;
+            grid-template: auto/1fr 2fr 1fr;
+            gap: 10px;
+        }
+        .container div{
+            border: 1px solid black;
+            padding: 40px;
+            background-color: #ddd;
+            text-align: center;
+            font-weight: bold;
+        }
+        .item-con{
+            display: grid;
+            margin-top: 30px;
+            grid-template: repeat(3,100px)/1fr;
+            gap: 3px;
+        }
+        .item-con div{
+            background-color: pink;
+            padding: 20px;
+            border: 2px solid white;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .boxes{
+            margin-top: 30px ;
+            display:grid;
+           grid-template: auto auto /1fr 1fr;
+            gap: 3px;
+        }
+        .boxes div{
+            background-color: violet;
+            padding: 20px;
+            border:1px solid white;
+            font-size: 17px;
+            text-align: center;
+        }
+
+        .con-box{
+            display: grid;
+            margin-top:30px ;
+            grid-template: auto /repeat(4,1fr);
+        }
+        .con-box div {
+               background-color: blueviolet;
+               padding: 20px;
+               border: 2px solid white;
+               font-size: 18px;
+               font-weight: bold;
+               text-align: center;
+        }
+    </style>
+</head>
+<h1 style="text-align: center;"> Grid Template</h1>
+<hr>
+<body>
+    <!-- auto sized rows -->
+    <div class="container">
+        <div class="item">box1</div>
+        <div class="item">box2</div>
+        <div class="item">box3</div>
+    </div>
+
+    <!-- fixed size rows -->
+
+    <div class="item-con">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+    </div>
+           
+    <!-- combination of auto and fractional units -->
+
+       <div class="boxes">
+        <div class="con">box1</div>
+        <div class="con">box2</div>
+        <div class="con">box3</div>
+        <div class="con">box4</div>
+       </div>
+              
+       <!-- repeat function  -->
+
+        <div class="con-box">
+            <div class="grid-con">box1</div>
+            <div class="grid-con">box2</div>
+            <div class="grid-con">box3</div>
+            <div class="grid-con">box4</div>
+        </div>
+</body>
+</html>
