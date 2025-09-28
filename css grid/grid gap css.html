@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> GRID GAP</title>
+    <style>
+        .container{
+            display: grid;
+            margin-top: 10px;
+            grid-gap: 20px;
+            grid-template-columns:repeat(2,1fr) ;
+            grid-template-rows: repeat(2,1fr);
+            
+        }
+        .container div{
+            background-color: dodgerblue;
+            padding: 20px;
+            border: 2px solid black;
+           
+        }
+        .container div:hover{
+                    transform: skew(-20deg);
+                    transition: 0.2s;
+                    box-shadow: 5px 10px 2px ;
+                    text-align: center;
+        }
+        .item-con{
+            margin-top: 30px;
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns:repeat(3,1fr)  ;
+        }
+        .item-con div{
+            background-color: violet;
+            padding: 20px;
+            border: 2px solid white;
+        }
+
+        .grid-container{
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(3,1fr);
+            grid-gap: 10px;
+        }
+        .grid-container div{
+            border:2px solid white;
+            padding: 20px;
+            background-color: teal;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            
+
+        }
+    </style>
+</head>
+<h1 style="text-align: center;"> Grid gap In Css</h1>
+<hr>
+<body>
+
+    <!--  grid row and col with gap -->
+    <div class="container">
+        <div class="item">box1</div>
+        <div class="item box">box2</div>
+        <div class="item">box3</div>
+        <div class="item box">box4</div>
+    </div>
+
+    <!-- grid basics with gap -->
+
+    <div class="item-con">
+        <div class="boxes">box1</div>
+        <div class="boxes">box2</div>
+        <div class="boxes">box3</div>
+        <div class="boxes">box4</div>
+    </div>
+     
+    <!-- using grid fractional units -->
+
+    <div class="grid-container">
+        <div class="grid-box">box1</div>
+        <div class="grid-box">box2</div>
+        <div class="grid-box">box3</div>
+        <div class="grid-box">box4</div>
+        <div class="grid-box">box5</div>
+        <div class="grid-box">box6</div>
+    </div>
+</body>
+</html>
