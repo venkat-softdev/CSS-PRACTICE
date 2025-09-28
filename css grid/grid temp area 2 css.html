@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID TEMPLATE AREA 2</title>
+    <style>
+        *{
+            margin: 0px ;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container{
+            background-color: violet;
+           padding: 10px;
+            display: grid;
+            grid-template-areas: 
+            'header header header'
+            'content content sidebar'
+            'footer footer footer'
+            ;
+            gap: 3px;
+            
+        }
+
+
+        header,
+        main,
+        aside,
+        footer{
+           padding: 10px;
+           text-align: center;
+           border: 2px solid white;
+        }
+
+        /* header{
+            grid-area: header;
+        }
+        main{
+            grid-area: content;
+        }
+        aside{
+            grid-area: sidebar;
+        }
+        footer{
+            grid-area: footer;
+        } */
+
+        @media(max-width:800px){
+            .container{
+                grid-template-areas: 
+                   'header'
+                   'content sidebar'
+                   'footer';
+                   grid-template-columns: 1fr;
+            }
+        }
+
+        @media(max-width:600px){
+            .container{
+                grid-template-areas: 
+                'header'
+                'content '
+                'sidebar'
+                'footer';
+               
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header> Header</header>
+        <main> content</main>
+        <aside>sidebar</aside>
+        <footer>footer</footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID TEMPLATE CSS</title>
+    <style>
+        .container{
+            padding: 0px;
+            margin: 0px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 20px;
+            display: grid;
+            grid-template-areas: 
+              'header header header'
+              'content content content'
+              'footer footer footer'
+            ;
+           ;
+            padding: 10px;
+            gap: 3px;
+            
+        }
+           header{
+              grid-area: header;
+             
+           }
+           main{
+            grid-area: content;
+           
+           }
+           footer{
+            grid-area: footer;
+           
+           }
+
+           header,
+           main,
+           footer{
+            border: 2px solid #ccc;
+            padding: 10px;
+            background-color: pink;
+           }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>header</header>
+        <main>content</main>
+        <footer>footer</footer>
+    </div>
+</body>
+</html>
