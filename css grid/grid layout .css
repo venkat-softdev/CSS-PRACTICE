@@ -15,7 +15,7 @@
     'footer footer footer'
     ;
     grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 50px 100px 1fr 50px;
+    grid-template-rows: 50px 100px 1fr 70px;
     
 }
 header,
@@ -147,6 +147,7 @@ main p{
     height: 150px;
     background-color: violet;
     margin:40px auto;
+    border-radius: 20px;
 }
 .box-ro:hover{
     transform: rotate(360deg);
