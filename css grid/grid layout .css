@@ -1,0 +1,156 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: aliceblue;
+    display: grid;
+    grid-template-areas: 
+    'header header header'
+    'nav nav nav'
+    'sidebar content aside'
+    'footer footer footer'
+    ;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 50px 100px 1fr 50px;
+    
+}
+header,
+nav,
+.one,
+main,
+aside,
+footer{
+     background-color: white;
+    
+    padding: 20px;
+    border: 2px solid white;
+    font-weight: bold;
+    text-align: center;
+    
+}
+header{
+    grid-area: header;
+    background-color:wheat;
+    
+    
+}
+nav{
+    grid-area: nav;
+    background-color: yellow;
+}
+.one{
+    grid-area: sidebar;
+    background-color: teal;
+}
+main{
+    grid-area: content;
+    background-color:white;
+    color: #333;
+   
+}
+footer{
+    grid-area: footer;
+    background-color: chocolate;
+}
+aside{
+    grid-area:aside;
+    background-color: lightgreen;
+}
+
+a{
+    text-decoration: none;
+     color: white;  
+    
+    
+}
+ul li{
+    list-style: none;
+      float: left;
+      margin: 30px;
+    
+}
+nav{
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    align-items: center;
+    
+   
+}
+nav ul :hover{
+    color: orangered;
+    transition: 0.5s linear;
+}
+.active{
+    color: orangered;
+    padding-bottom: 3px;
+}
+header{
+    font-size: 20px;
+    color: #333;
+    text-transform: uppercase;
+
+}
+main p{
+    padding: 20px;
+    line-height: 20px;
+    color: white;
+    
+}
+.title{
+    color: white;
+     padding: 10px; 
+    background-color: #333;
+    border-radius: 10px ;
+    display: block;
+   
+    
+    
+    
+    
+    
+   
+
+}
+.content{
+     max-height: 0px;
+    overflow: hidden;
+  
+    /* padding: 20px; */
+    border: 2px solid white;
+   
+    
+}
+.content:target{
+    max-height: 150px;
+    transition: 0.5s linear;
+    background-color:#767d8c;
+    border-radius: 20px;
+}
+
+.action{
+    background-color: orangered;
+    padding: 10px;
+    border-radius: 20px;
+}
+.action:hover{
+    color: white;
+}
+
+.box-ro{
+    width: 150px;
+    height: 150px;
+    background-color: violet;
+    margin:40px auto;
+}
+.box-ro:hover{
+    transform: rotate(360deg);
+    transition: 1s linear;
+    background: linear-gradient(purple,pink,violet);
+    border-radius: 50%;  
+}
