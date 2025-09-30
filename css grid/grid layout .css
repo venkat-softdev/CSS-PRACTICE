@@ -148,6 +148,7 @@ main p{
     background-color: violet;
     margin:40px auto;
     border-radius: 20px;
+    transition: all 1s linear;
 }
 .box-ro:hover{
     transform: rotate(360deg);
