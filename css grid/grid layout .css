@@ -15,7 +15,7 @@
     'footer footer footer'
     ;
     grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 50px 100px 1fr 1fr;
+    grid-template-rows: 50px 100px 1fr 100px;
     
 }
 header,
@@ -44,7 +44,9 @@ nav{
 }
 .one{
     grid-area: sidebar;
-    background-color: yellow;
+    background-color: white;
+    
+   
 }
 main{
     grid-area: content;
@@ -58,7 +60,7 @@ footer{
 }
 aside{
     grid-area:aside;
-    background-color: dodgerblue;
+  background-color: dodgerblue;
 }
 
 a{
@@ -189,3 +191,67 @@ footer{
 .link{
     margin:20px;
 }
+h1{
+    color: purple;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+
+}
+h1:hover{
+    color: red;
+    transition: 0.2s linear;
+}
+.one a{
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+   
+    text-transform: capitalize;
+   
+  
+    
+}
+.one{
+   border: 2px solid white;
+    background-color: aliceblue;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px white;
+    border: 2px solid black;
+}
+ul li{
+    list-style: none;
+    padding: 10px;
+    
+    
+}
+.one ul{
+  
+    display: flex;
+    flex-direction: column;
+    
+
+}
+aside ul{
+    display: flex;
+    flex-direction: column;
+    
+   
+    
+   
+    
+}
+aside a{
+    color: #333;
+   
+    
+    
+}
+aside{
+     background-color: aliceblue;
+     border: 2px solid black;
+     border-radius:10px ;
+    
+    
+     
+}
+
