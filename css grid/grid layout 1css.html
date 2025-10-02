@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID LAYOUT 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: "poppins",sans-serif;
+             box-sizing: border-box; 
+        }
+        .container{
+            height: 100vh;
+            color: #fff;
+              padding: 10px; 
+            display: grid;
+            grid-template-areas: 'navbar navbar navbar'
+                                   'sidebar content content'
+                                     'sidebar box1 box2'
+                                    'sidebar footer footer';
+                                    grid-gap: 0.6rem;
+                                    grid-template-columns: 0.5fr 1fr 1fr ;
+                                    grid-template-rows: 80px 1fr 1fr 100px;
+        }
+
+        nav,
+        aside,
+        main,
+        .box1,
+        .box2,
+        footer{
+          padding: 10px;
+          border: 2px solid white;
+          border-radius: 10px;
+          font-weight: bold;
+        }
+        nav{
+            grid-area: navbar;
+            background:linear-gradient(green,lightgreen);
+            text-align: center;
+        }
+        aside{
+            grid-area: sidebar;
+            background:linear-gradient(yellow,yellowgreen);
+            text-align: center;
+        }
+        main{
+            grid-area: content;
+            background:linear-gradient(orange,orangered);
+            text-align: center;
+        }
+        .box1{
+            grid-area: box1;
+            background:linear-gradient(skyblue,blue);
+            text-align: center;
+        }
+        .box2{
+            grid-area: box2;
+            background:linear-gradient(green,teal);
+            text-align: center;
+        }
+        footer{
+            grid-area: footer;
+            background: linear-gradient(black,grey);
+            color: white;
+            text-align: center;
+        }
+        @media(max-width:640px){
+            .container{
+                grid-template-columns: 1fr;
+                grid-template-rows: .5fr 1.2fr .5fr 1fr .5fr;
+                grid-template-areas: 'navbar'
+                                      'content'
+                                      'sidebar'
+                                      ' box1'
+                                        'box2'
+                                         'footer';
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>Navbar</nav>
+        <aside>Sidebar</aside>
+        <main>Content</main>
+          <div class="box1">Box 1</div>
+          <div class="box2">Box 2</div>
+          <footer>Footer</footer>
+    </div>
+</body>
+</html>
