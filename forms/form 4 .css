@@ -47,10 +47,11 @@ body{
     font-size: 1.4em;
     border-radius: 10px;
     cursor: pointer;
-    background:linear-gradient(black,grey);
+    background:transparent;
     text-align: center;
     color: whitesmoke;
     transition: all 0.2s linear;
+    
 }
 
 .form-container form input:hover{
