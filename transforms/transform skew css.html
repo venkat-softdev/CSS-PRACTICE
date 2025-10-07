@@ -4,10 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TRANSFORM  SKEW IN CSS</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: goldenrod;
+            margin: 30px auto;
+            border-radius: 15px;
+            transform: skew(25deg);
+        }
+        .box-1{
+            width: 150px;
+            height: 150px;
+            background-color: dodgerblue;
+            margin: 30px auto;
+            font-size: 20px;
+            font-weight: 500;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            transition: all 0.5s linear;
+             padding: 10px;
+             
+            
+            
+        }
+        .box-1:hover{
+            transform: skew(-35deg);
+            color: black;
+            box-shadow: 5px 5px 10px ;
+            width: 200px;
+            height: 200px;
+            font-family: Arial, Helvetica, sans-serif;
+          
+         
+        }
+    </style>
 </head>
 <h2 style="text-align: center;">Transform Skew in css</h2>
 <hr>
 <body>
-    
+    <div class="box"></div>
+    <div class="box-1">Venkat-Softdev
+        <p>Hi Trust Me i am Developer</p>
+    </div>
 </body>
 </html>
