@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRANSFORM TRANSALATE</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: orangered;
+            border-radius: 15px;
+            transform: translate(50%,50%);
+        }
+        .box-1{
+            width: 200px;
+            height: 200px;
+            background-color: purple;
+            margin-top: 130px;
+            border-radius: 20px;
+            margin:  130px auto;
+            transition: all  0.5s linear;
+            
+        }
+        .box-1:hover{
+            transform: translate(50px,50px );
+            box-shadow: 4px 4px 10px  ; 
+        }
+        
+        .box-2{
+            width: 200px;
+            height: 200px;
+            background-color: deepskyblue;
+            border-radius: 20px;
+            margin: auto;
+            transition: all 0.5s linear;
+        }
+        .box-2:hover{
+            background-color: aqua;
+            transform: translate(-50px,-50px);
+        }
+        .box-3{
+            background-color: green;
+            width: 200px;
+            height: 200px;
+            border-radius: 20px;
+            margin: 30px auto;
+            transition: all 0.5s linear;
+        }
+        .box-3:hover{
+            transform: translate(-50px,50px);
+            background-color: lightgreen;
+        }
+        .box-4{
+            width: 200px;
+            height: 200px;
+             background-color: brown; 
+            margin: 30px auto;
+            border-radius: 20px;
+            transition: all 0.5s linear;
+        }
+        .box-4:hover{
+            transform: translate(50px, -50px);
+            background-color: chocolate;
+        }
+    </style>
+</head>
+<h2 style="text-align: center;">transform transalate property</h2>
+<hr>
+<body>
+    <div class="box"></div>
+    <div class="box-1"></div>
+    <div class="box-2"></div>
+    <div class="box-3"></div>
+    <div class="box-4"></div>
+</body>
+</html>
