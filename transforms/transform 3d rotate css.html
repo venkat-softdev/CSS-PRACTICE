@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> TRANSFORM 3D ROTATE</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: deeppink;
+            margin: 30px auto;
+            border-radius: 20px;
+            transform: rotateX(20deg);
+        }
+         .box-2{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            margin: 30px auto;
+            border-radius: 20px;
+            transition: all  0.5s linear;
+        }
+        .box-2:hover{
+            transform: rotateX(360deg);
+        }
+    </style>
+</head>
+<h2 style="text-align: center;">Transform 3d rotate </h2>
+<hr>
+<body>
+    <div class="box">box</div>
+    <div class="box-2"></div>
+</body>
+</html>
