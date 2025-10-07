@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRANSFORM IN CSS</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: deeppink;
+            margin: 60px auto;
+            font-size: 30px;
+            text-align: center;
+            color: white;
+             padding: 10px;
+             border-radius: 15px;
+             transition: all 0.5s linear;
+           
+           
+        }
+        .box:hover{
+            transform: rotate(60deg);
+            border-radius: 50%;
+            background: linear-gradient(to right, deeppink,rebeccapurple);
+             
+        }
+        .box-1{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(143, 67, 219);
+            margin: 40px auto;
+            border-radius:15px;
+            transition:  all 0.5s linear;
+        }
+        .box-1:hover{
+            width: 300px;
+            transform: rotate(90deg);
+            box-shadow: 2px 2px 10px 2px black;
+        }
+    </style>
+</head>
+<h2 style="text-align: center;">Trnsform in 2d properties properties</h2>
+<hr>
+<body>
+    <div class="box"></div>
+
+    <div class="box-1"></div>
+</body>
+</html>
