@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIMATION IN CSS </title>
+    <style>
+        .box{
+            width: 150px;
+            height: 150px;
+            background-color: dodgerblue;
+            margin: 30px auto;
+            animation:box 3s linear infinite;
+            border-radius: 20px;
+        }
+        @keyframes box{
+            0%{background-color: blue; transform:translateX(0);}
+            50%{background-color: green; transform:translateX(200px);}
+            100%{background-color: red; transform:translateX(0);}
+        }
+
+        .box-1{
+            width: 200px;
+            height: 200px;
+            background-color: deeppink;
+            margin: 40px auto;
+            border-radius: 50%;
+            animation: box-1 3s ease-in-out infinite ;
+            font-weight: bold;
+            font-size: 40px;
+            color: white;
+            padding: 10px;
+        }
+        @keyframes box-1{
+            0%{background-color: orangered; transform: rotate(0deg);}
+            50%{background-color: deeppink; transform: rotate(360deg);}
+            100%{background-color: rebeccapurple; transform:rotate(0deg);}
+        }
+        p{
+            text-align: center;
+            padding: 10px;
+            margin-top: 40%;
+        }
+        .box-2{
+            width: 150px;
+            height: 150px;
+            background-color: teal;
+            margin: 30px auto;
+            border-radius:20px;
+            animation: box-2 3s linear infinite;
+        }
+        @keyframes box-2
+        
+    </style>
+</head>
+<h2 style="text-align: center;">Animation in css</h2>
+<hr>
+<body>
+    <div class="box"></div>
+    <hr>
+    <div class="box-1"><p >box</p></div>
+    <hr>
+    <div class="box-2"></div>
+</body>
+</html>
