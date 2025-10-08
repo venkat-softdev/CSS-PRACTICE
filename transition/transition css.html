@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRANSITION IN  CSS</title>
+    <style>
+        body{
+            position: relative;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(36, 162, 162);
+            border-radius: 15px ;
+            margin: 30px auto;
+            transition: all 1s linear;
+        }
+        .box:hover{
+            transform: translateX(250px);
+            box-shadow: 5px 5px 10px  ;
+        }
+
+
+
+         .box-con{
+            width: 400px;
+            height: 400px;
+            border-radius: 20px;
+            border: 2px solid black;
+            margin: 30px auto;
+            position: relative;
+        }
+        .box-1{
+            width: 150px;
+            height: 150px;
+            background-color: rgb(170, 122, 33);
+            transition: all 1s linear;
+            position: absolute;
+           border-radius: 20px;
+           left: 20px;
+           top: 20px;
+           
+            
+        
+        }
+        .box-1:hover{
+            background-color: gold;
+            transform: translateY(250px);
+        }
+       .box-2{
+        width: 200px;
+        height: 200px;
+        background-color: purple;
+        margin: 30px auto;
+        border-radius: 20px;
+        transition: all 0.5s linear;
+       }
+       .box-2:hover{
+        background-color:rgb(226, 28, 226);
+       }
+    </style>
+</head>
+<h2 style="text-align: center;">Transition in css</h2>
+<hr>
+<body>
+    <div class="box"></div>
+    <div class="box-con">
+        <div class="box-1"></div>
+    </div>
+    <div class="box-2"></div>
+    
+   
+</body>
+</html>
