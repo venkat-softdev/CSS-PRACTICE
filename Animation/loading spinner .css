@@ -25,6 +25,7 @@ body{
    margin: auto;
    transition-property: animation;
    animation: spinner 2s ease-in-out infinite;
+   cursor: progress;
 }
 
 @keyframes spinner{
@@ -34,4 +35,7 @@ body{
     to{
         transform: rotate(360deg);
     }
+}
+#para{
+    cursor: progress;
 }
