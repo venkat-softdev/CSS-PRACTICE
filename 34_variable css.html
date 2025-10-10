@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS VARIABLE</title>
+    <style>
+
+
+:root{
+    --bgcolor:deeppink;
+    --text-color:white;
+   --border-shape:20px ;
+   --text-size:20px;
+   --fontfamily:dubai;
+   --padding:10px;
+   --moving:translatey(200px);
+   --smooth:all 1s ease-in-out;
+      --sizechange:50%;
+    
+}
+        .container{
+            text-align: center;
+            width: 200px;
+            height: 200px;
+            margin: 30px auto;
+            background-color: var(--bgcolor);
+            font-family: var(--fontfamily);
+            color: var(--text-color);
+            font-size: var(--text-size);
+            border-radius: var(--border-shape);
+            padding: var(--padding);
+             transition: var(--smooth);
+           
+            
+          
+            
+        }
+        .container:hover{
+           
+             transform: var(--moving);
+             border-radius: var(--sizechange);
+        }
+    </style>
+</head>
+<h2 style="text-align: center;">Css Variable</h2>
+<hr>
+<body>
+    <div class="container">
+        <p>Hi im venkat</p>
+        <p>Hey trust me im a developer</p>
+    </div>
+</body>
+</html>
