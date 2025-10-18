@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+     font-family: 'satisfy'; 
+    background-color: #000;
+}
+
+h1{
+    font-size: 300px;
+    font-weight: bold;
+    color: #ddd;
+    cursor: pointer;
+    user-select: none;
+    transition: .2s;
+    animation: text 1s linear infinite;
+}
+
+@keyframes text{
+    from{
+        color: #fff;
+    }
+    to{
+        text-shadow: 0 0 5px #f53b57,
+         0 0 25px #f53b57,
+         0 0 50px #f53b57,
+         0 0 100px #f53b57 ;
+    }
+}
