@@ -43,10 +43,11 @@ body{
 }
 .btn:hover .span{
     width: 100%;
-    
+   
 }
 .btn:hover{
     color: #fff;
+   
 }
 
 @keyframes animate{
