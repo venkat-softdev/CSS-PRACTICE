@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#341f97 ;
+}
+h1{
+    font-size: 60px;
+    font-weight: 500;
+    color:#FC427B;
+    width: 0ch;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 1px solid #fff;
+    animation: typing 8s steps(20) infinite;
+}
+@keyframes typing{
+    0%{
+        width: 0ch;
+    }
+    50%{
+        width: 7ch;
+    }
+}
