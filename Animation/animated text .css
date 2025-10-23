@@ -20,7 +20,7 @@ h1{
     cursor: pointer;
     user-select: none;
     transition: .2s;
-    animation: text 1s linear infinite;
+    animation: text 2s linear infinite;
 }
 
 @keyframes text{
