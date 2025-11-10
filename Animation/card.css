@@ -11,23 +11,29 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .box .con-1{
     max-width: 300px;
-    background-color: red;
+     margin: 0px 10px;
     padding: 10px;
     max-height: 700px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 
 }
 .con-1 h2{
     text-align: center;
+    font-size: 16px;
 }
 .con-1 p{
  text-align: center;
 }
 .con-1 ul{
     list-style: none;
+    font-size:14px;
+
    
 }
 .con-1 ul li{
@@ -47,4 +53,20 @@
     padding: 10px;
     font-weight: 500;
     font-size: 15px;
+    color: darkblue;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border: none;
+}
+
+.con-1 .money span{
+  font-size: 50px;
+  font-weight: 600;
+}
+.con-sec{
+    border: 3px solid dodgerblue;
+}
+.con-sec .pop{
+    background-color: dodgerblue;
+    color: #fff;
 }
